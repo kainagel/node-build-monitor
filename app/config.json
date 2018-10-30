@@ -1,23 +1,120 @@
 {
-  "monitor": {
-    "interval": 5000,
-    "numberOfBuilds": 12,
-    "latestBuildOnly": false,
-    "sortOrder": "date",
-    "debug": true
-  },
-  "services": [
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "marcells/bloggy"
-      }
+    "monitor": {
+	"interval": 30000,
+	"numberOfBuilds": 12,
+	"latestBuildOnly": true,
+	"sortOrder": "project",
+	"debug": true
     },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "marcells/node-build-monitor"
-      }
-    }
-  ]
+    "services": [
+	{
+	    "name": "Travis",
+	    "configuration": {
+		"slug": "matsim-vsp/vsp-playgrounds"
+	    }
+	}
+	,
+	{
+	    "name": "Travis",
+	    "configuration": {
+		"slug": "agentsoz/matsim-melbourne"
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "vsp/tub-rmit-collaboration",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "vsp/imob",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "vsp/capetown",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "vsp/nairobi",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "vsp/matsim-berlin-buildserver",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+	,
+	{
+	    "name": "GitLab",
+	    "configuration": {
+		"url": "https://gitlab.tubit.tu-berlin.de",
+		"token": "_-M5PUxvsgZvtQWfx1U4",
+		"additional_query": "&membership=true",
+		"numberOfPipelinesPerProject": 3,
+		"slugs": [
+		    {
+			"project": "nagel/au-flood-evacuation",
+			"ref": "master"
+		    }
+		]
+	    }
+	}
+    ]
 }

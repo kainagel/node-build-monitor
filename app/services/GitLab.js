@@ -136,7 +136,7 @@ module.exports = function () {
         getBuildUrl = function(project, build) {
             if(build.jobs && build.jobs[0]) {
                 var base = self.config.url + '/';
-                return base + project.path_with_namespace + '/-/jobs/' + build.jobs[0].id; //Not sure whether this works
+                return base + project.path_with_namespace + '/builds/' + build.jobs[0].id; //Not sure whether this works
             } else {
                 return "";
             }
