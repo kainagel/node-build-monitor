@@ -10,6 +10,13 @@
 	{
 	    "name": "Travis",
 	    "configuration": {
+		"slug": "matsim-vsp/matsim-santiago"
+	    }
+	}
+	,
+	{
+	    "name": "Travis",
+	    "configuration": {
 		"slug": "matsim-vsp/vsp-playgrounds"
 	    }
 	}
@@ -22,18 +29,16 @@
 	}
 	,
 	{
-	    "name": "GitLab",
+	    "name": "Travis",
 	    "configuration": {
-		"url": "https://gitlab.tubit.tu-berlin.de",
-		"token": "_-M5PUxvsgZvtQWfx1U4",
-		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
-		"slugs": [
-		    {
-			"project": "vsp/tub-rmit-collaboration",
-			"ref": "master"
-		    }
-		]
+		"slug": "madspDTU/fastOrForcedToFollow"
+	    }
+	}
+	,
+	{
+	    "name": "Travis",
+	    "configuration": {
+		"slug": "matsim-org/Opdyts-MATSim-Integration"
 	    }
 	}
 	,
@@ -43,7 +48,7 @@
 		"url": "https://gitlab.tubit.tu-berlin.de",
 		"token": "_-M5PUxvsgZvtQWfx1U4",
 		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
+		"numberOfPipelinesPerProject": 1,
 		"slugs": [
 		    {
 			"project": "vsp/imob",
@@ -59,7 +64,7 @@
 		"url": "https://gitlab.tubit.tu-berlin.de",
 		"token": "_-M5PUxvsgZvtQWfx1U4",
 		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
+		"numberOfPipelinesPerProject": 1,
 		"slugs": [
 		    {
 			"project": "vsp/capetown",
@@ -75,23 +80,7 @@
 		"url": "https://gitlab.tubit.tu-berlin.de",
 		"token": "_-M5PUxvsgZvtQWfx1U4",
 		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
-		"slugs": [
-		    {
-			"project": "vsp/nairobi",
-			"ref": "master"
-		    }
-		]
-	    }
-	}
-	,
-	{
-	    "name": "GitLab",
-	    "configuration": {
-		"url": "https://gitlab.tubit.tu-berlin.de",
-		"token": "_-M5PUxvsgZvtQWfx1U4",
-		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
+		"numberOfPipelinesPerProject": 1,
 		"slugs": [
 		    {
 			"project": "vsp/matsim-berlin-buildserver",
@@ -107,7 +96,7 @@
 		"url": "https://gitlab.tubit.tu-berlin.de",
 		"token": "_-M5PUxvsgZvtQWfx1U4",
 		"additional_query": "&membership=true",
-		"numberOfPipelinesPerProject": 3,
+		"numberOfPipelinesPerProject": 1,
 		"slugs": [
 		    {
 			"project": "nagel/au-flood-evacuation",
@@ -118,3 +107,4 @@
 	}
     ]
 }
+

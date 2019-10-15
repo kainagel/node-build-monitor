@@ -164,13 +164,15 @@ module.exports = function () {
             var slugs = self.config.slugs,
                 matchers = slugs.map(slug => slug.project),
                 findNamespaceIndexInMatchers = function(namespace) {
-                    for(var i = 0; i < matchers.length; i++){
-                        var matcher = matchers[i];
-                        if(matcher.endsWith("/**")){
-                            prefix = matcher.replace("/**","");
-                            if(namespace.full_path.startsWith(prefix)) return i;
-                        }else{
-                            if( matcher === namespace.full_path + "/*") return i;
+                    if ( namespace !== undefined ) {
+                        for (var i = 0; i < matchers.length; i++) {
+                            var matcher = matchers[i];
+                            if (matcher.endsWith("/**")) {
+                                prefix = matcher.replace("/**", "");
+                                if (namespace.full_path.startsWith(prefix)) return i;
+                            } else {
+                                if (matcher === namespace.full_path + "/*") return i;
+                            }
                         }
                     }
                     return -1;
